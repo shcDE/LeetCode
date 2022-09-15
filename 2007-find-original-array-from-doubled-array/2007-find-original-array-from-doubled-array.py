@@ -12,8 +12,7 @@ class Solution:
                 if i == 0:
                     if cnts[i] > 0:
                         cnts[i] -= 1
-                        result.append(i)
-                
+                        result.append(i)   
                 else:
                     cnts[i*2] -= 1
                     result.append(i)
