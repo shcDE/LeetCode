@@ -11,5 +11,6 @@ class Solution:
                 l_choice = mul*nums[l] + dp[i+1][l+1]
                 r_choice = mul*nums[r] + dp[i+1][l]
                 dp[i][l] = max(l_choice, r_choice)
-                
+          
+        
         return dp[0][0]
